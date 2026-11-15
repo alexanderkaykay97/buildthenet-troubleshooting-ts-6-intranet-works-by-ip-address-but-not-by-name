@@ -1,0 +1,19 @@
+Current configuration : 1842 bytes
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+hostname SW-Office
+no ip routing
+!
+interface FastEthernet0/1
+ no shutdown
+ switchport mode access
+!
+interface FastEthernet0/2
+ no shutdown
+ switchport mode access
+!
+interface GigabitEthernet0/1
+ no shutdown
+ switchport mode access
+end
